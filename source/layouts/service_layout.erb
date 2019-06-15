@@ -1,0 +1,73 @@
+<%= partial "shared/head" %>
+<%= partial "shared/header" %>
+<body class="antialiased flex flex-col min-h-screen justify-center">
+  <main class="flex-1">
+    <section>
+        <div class="bg-gray-100 py-6">
+            <div class="w-10/12 mx-auto">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center">
+                        <figure class="w-8 h-8 rounded-full mr-2 bg-blue-500 bg-cover bg-no-repeat bg-center" style="background-image: url(<%= current_page.data.company_logo %>);"></figure>
+                        <hgroup>
+                            <h3 class="font-bold text-gray-800 m-0 text-sm leading-none"><%= current_page.data.company %></h3>
+                            <div class="flex items-start md:items-center flex-col md:flex-row">
+                                <h4 class="font-bold text-gray-500 m-0 text-sm leading-none">@<%= current_page.data.state %> , <%= current_page.data.country %></h4>
+                                <span class="text-gray-500 mx-2 hidden md:inline-block">|</span>
+                                <a class="font-bold text-gray-500 m-0 text-sm leading-none" href="<%= current_page.data.company_url %>" target="_blank"><%= current_page.data.company_url %></a>
+                            </div>
+                        </hgroup>
+                    </div>
+                    <span class="bg-orange-200 rounded px-2 inline-block text-orange-400 font-bold">Pro</span>
+                </div>
+                <div class="flex items-center flex-col md:flex-row">
+                    <h2 class="text-gray-800 font-bold text-4xl mr-4 leading-none"><%= current_page.title %> </h2>
+                    <span class="bg-teal-200 rounded-sm px-2 inline-block text-teal-800 text-sm mt-2 mt-0:md"><%= current_page.data.job_type %></span>
+                </div>
+            </div>
+        </div>
+        <div class="mx-auto max-w-6xl py-6 w-11/12 md:w-6/12">
+            <div>
+                <h3 class="text-xs font-bold mb-2 uppercase">Categorías</h3>
+                <% current_page.data.categories.each do |f| %>
+                    <span class="rounded bg-gray-200 p-1 text-sm font-bold text-gray-600"><%= f %></span>
+                <% end %>
+            </div>
+
+            <div class="py-6 text-xl leading-relaxed text-gray-800 job__content">
+                <h3 class="text-xs font-bold mb-2 uppercase">Acerca de</h3>
+                <%= yield %>
+            </div>
+            
+            <h3 class="text-xs font-bold mb-2 uppercase">Aplicar</h3>
+            <% if current_page.data.email? %>
+                <div class="rounded bg-gray-200 p-5 my-2">
+                    <h3 class="font-bold text-sm">Aplicar Vacante:</h3>
+                    <p class="py-1">Enviar Portafolio a:</p>
+                    <a class="py-2 px-4 bg-blue-500 rounded text-white font-bold my-2 inline-block flex items-center justify-between text-xl" href="mailto:<%= current_page.data.email %>"><%= current_page.data.email %> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a>
+                </div>
+            <% end %>
+
+            <% if current_page.data.apply_url? %>
+                <div class="rounded bg-gray-200 p-5 my-2">
+                    <h3 class="font-bold text-sm">Aplicar Vacante:</h3>
+                    <p class="py-1">Aplicar y más detalles en:</p>
+                    <a class="py-2 px-4 bg-blue-500 rounded text-white font-bold my-2 inline-block flex items-center justify-between text-xl" href="<%= current_page.data.apply_url %>"><%= current_page.data.apply_url %> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a>
+                </div>
+            <% end %>
+
+            <div class="p-4 mt-4 shadow-md rounded">
+                <h3 class="font-bold">¿Quieres recibir vacantes similares a tu correo?</h3>
+                <p class="mb-2">Suscribete a nuestra lista de correos y recibe los mejores trabajos en tu zona &#x1F447;</p>
+                <div class="py-2">
+                    <form action="" class="flex">
+                        <input class="mr-1 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Nombre">
+                        <input class="mr-1 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" placeholder="Email">
+                        <input class="bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" value="Suscribirme">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+  </main>
+  <%= partial "shared/footer" %>

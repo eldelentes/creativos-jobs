@@ -1,0 +1,27 @@
+.job__content {
+    p {
+        margin-bottom: 1rem;
+    }
+}
+
+.pagination li {
+    color: #2d3748;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-weight: 700;
+    display: inline-block;
+    border-radius: .25rem;
+    border-width: 1px;
+    border-color: #e2e8f0;
+}
+
+.pagination li.active {
+    background: #4299e1;
+    color: #fff;
+}
+
+.pagination li + li {
+    margin-left: 0.2rem;
+}

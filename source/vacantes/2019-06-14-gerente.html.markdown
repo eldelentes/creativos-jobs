@@ -1,0 +1,28 @@
+---
+title: Gerente
+company_logo: https://scontent.fntr3-1.fna.fbcdn.net/v/t1.0-9/48416635_2001216703303859_2008337543812087808_n.png?_nc_cat=107&_nc_ht=scontent.fntr3-1.fna&oh=73ed5aec1ecb2c201dab2c70da4081ad&oe=5D7D25C6
+company: Microsoft
+company_url: www.icalialabs.com
+date: 2019-06-14 22:09 UTC
+tags: blogging, middleman, hello, world
+categories:
+  - one
+  - two
+  - moda
+job_type: Medio Tiempo
+country: Brazil
+state: Monterrey
+email: eldelentes@gmail.com
+apply_url: www.icalialabs.com
+
+---
+
+Come join Under Armour’s digital division, creating software to power the future of connected fitness. We’re serious about individual growth and athlete achievement, and we’d like you to join us to build real products that will help millions of people improve their lives through better health & fitness. You will learn, grow and play in an environment that focuses on results and delivery, all backed by one of the strongest consumer brands in history. Will you…PROTECT THIS HOUSE?
+
+We’re looking for a humble and hungry Engineering Manager to lead a small, cohesive team of great engineers responsible for building and operating services centered around premium experiences, identity management, and timeseries data. This team is part of our Foundation Services organization, which is responsible for services, tools, and libraries that powers an ecosystem of over 200M athletes, fitness enthusiasts, and people leading healthy lives.
+
+Our Engineering Managers are responsible for coaching and leading teams of talented engineers as we deliver on our roadmap. To thrive in this role, you execute well in an agile environment where we depend on you to make pragmatic decisions, establish and use tight feedback loops, and take calculated risks based on your knowledge from collaborating with your peers. You’ve led teams before - either with direct reports or as a technical lead - and are comfortable delivering and receiving feedback with trust and candor. You know that your success is dependent on the success of your team, and you’re committed to coach and serve a team of experienced engineers. You’re excited to deliver on our mission to Make All Athletes Better.
+
+You value pragmatic technical solutions, have experience scoping, building, and operating critical systems with millions of transactions daily, and you’re comfortable taking on call rotations alongside your team. You have a strong understanding or direct experience with many of the technologies found in our stack: Java 8, Scala, Go, Spring Boot, Play, Akka, Kafka, DynamoDB, and Docker.
+
+A BS in Computer Science or similar field, or equivalent real-world experience, is required.
