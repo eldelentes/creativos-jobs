@@ -13,6 +13,16 @@ collections:
     create: true
     slug: '{{year}}-{{title}}'
     fields:
-      - {label: Title, name: title, widget: string}
-      - {label: Publish Date, name: date, widget: datetime}
-      - {label: Body, name: body, widget: markdown}
+      - {label: "Pro", name: "Pro", widget: "boolean", default: true}
+      - {label: Titulo, name: title, widget: string}
+      - {label: Empresa, name: company, widget: string}
+      - {label: Página Web, name: company_url, widget: string}
+      - {label: Logotipo, name: company_logo, widget: image, default: "/uploads/chocolate-dogecoin.jpg"}
+      - {label: Dia de Publicación, name: date, widget: datetime}
+      - {label: Pais, name: country, widget: select, options: ["México", "Argentina", "Brasil"]}
+      - {label: Estado, name: state, widget: string}
+      - {label: Type, name: job_type, widget: select, options: ["Tiempo Completo", "Medio Tiempo", "Intership", "Freelance"]}
+      - {label: Category, name: categories, widget: "list", allow_add: false, default: ["diseño"]}
+      - {label: Email, name: email, widget: string}
+      - {label: Detalles, name: apply_url, widget: string}
+      - {label: Descripción, name: body, widget: markdown}
