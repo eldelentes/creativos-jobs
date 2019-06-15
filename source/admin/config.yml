@@ -18,7 +18,7 @@ collections:
       - {label: Empresa, name: company, widget: string}
       - {label: Página Web, name: company_url, widget: string}
       - {label: Logotipo, name: company_logo, widget: image, default: "/uploads/chocolate-dogecoin.jpg"}
-      - {label: Dia de Publicación, name: date, widget: date, format: "MMM DD YY"}
+      - {label: Dia de Publicación, name: date, widget: date, format: "YYYY-M-D HH:MM"}
       - {label: Pais, name: country, widget: select, options: ["Argentina", "Bolivia", "Brasil", "Chile", "Colombia", "Costa Rica", "Cuba", "Ecuador", "El Salvador", "Guayana Francesa", "Granada", "Guatemala",  "Guayana", "Haití", "Honduras", "Jamaica", "México", "Nicaragua", "Paraguay", "Panamá", "Perú", "Puerto Rico", "República Dominicana",  "Uruguay", "Venezuela" ]}
       - {label: Estado, name: state, widget: string}
       - {label: Tipo de Vacante, name: job_type, widget: select, options: ["Tiempo Completo", "Medio Tiempo", "Intership", "Freelance"]}
