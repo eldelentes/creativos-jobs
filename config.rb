@@ -17,7 +17,6 @@ activate :blog do |blog|
   blog.prefix = "vacantes"
   blog.permalink = "vacantes/{company}/{title}.html"
   blog.layout = "service_layout"
-  blog.taglink = "categories/{tag}.html"
 end
 
 # With alternative layout
