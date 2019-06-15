@@ -11,15 +11,15 @@ collections:
     extension: .html.md
     format: frontmatter
     create: true
-    slug: '{{year}}-{{title}}'
+    slug: '{{year}}-{{month}}-{{day}}-{{title}}'
     fields:
-      - {label: "Pro", name: "Pro", widget: "boolean", default: true}
+      - {label: Pro, name: "Pro", widget: "boolean", default: true}
       - {label: Titulo, name: title, widget: string}
       - {label: Empresa, name: company, widget: string}
       - {label: Página Web, name: company_url, widget: string}
       - {label: Logotipo, name: company_logo, widget: image, default: "/uploads/chocolate-dogecoin.jpg"}
-      - {label: Dia de Publicación, name: date, widget: datetime}
-      - {label: Pais, name: country, widget: select, options: ["México", "Argentina", "Brasil"]}
+      - {label: Dia de Publicación, name: date, widget: date}
+      - {label: Pais, name: country, widget: select, options: ["Argentina", "Bolivia", "Brasil", "Chile", "Colombia", "Costa Rica", "Cuba", "Ecuador", "El Salvador", "Guayana Francesa", "Granada", "Guatemala",  "Guayana", "Haití", "Honduras", "Jamaica", "México", "Nicaragua", "Paraguay", "Panamá", "Perú", "Puerto Rico", "República Dominicana",  "Uruguay", "Venezuela" ]}
       - {label: Estado, name: state, widget: string}
       - {label: Type, name: job_type, widget: select, options: ["Tiempo Completo", "Medio Tiempo", "Intership", "Freelance"]}
       - {label: Category, name: categories, widget: "list", allow_add: false, default: ["diseño"]}
