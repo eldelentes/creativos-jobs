@@ -23,6 +23,6 @@ collections:
       - {label: Estado, name: state, widget: string}
       - {label: Tipo de Vacante, name: job_type, widget: select, options: ["Tiempo Completo", "Medio Tiempo", "Intership", "Freelance"]}
       - {label: Categorías, name: categories, widget: "list", allow_add: false, default: ["diseño"]}
-      - {label: Email, name: email, widget: string}
+      - {label: Email, name: email, widget: string, required: false}
       - {label: URL Aplicación, name: apply_url, widget: string, required: false}
       - {label: Descripción, name: body, widget: markdown}
