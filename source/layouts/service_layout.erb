@@ -5,23 +5,22 @@
     <section>
         <div class="bg-gray-100 py-6">
             <div class="w-10/12 mx-auto">
-                <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center justify-center mb-4">
                     <div class="flex items-center">
-                        <figure class="w-8 h-8 rounded-full mr-2 bg-blue-500 bg-cover bg-no-repeat bg-center" style="background-image: url(<%= current_page.data.company_logo %>);"></figure>
-                        <hgroup>
-                            <h3 class="font-bold text-gray-800 m-0 text-sm leading-none"><%= current_page.data.company %></h3>
-                            <div class="flex items-start md:items-center flex-col md:flex-row">
-                                <h4 class="font-bold text-gray-500 m-0 text-sm leading-none">@<%= current_page.data.state %> , <%= current_page.data.country %></h4>
-                                <span class="text-gray-500 mx-2 hidden md:inline-block">|</span>
-                                <a class="font-bold text-gray-500 m-0 text-sm leading-none" href="<%= current_page.data.company_url %>" target="_blank"><%= current_page.data.company_url %></a>
-                            </div>
-                        </hgroup>
+                        <figure class="w-8 h-8 mr-2 bg-cover bg-no-repeat bg-center" style="background-image: url(<%= current_page.data.company_logo %>);"></figure>
+                        <h3 class="font-bold text-gray-800 m-0 text-sm leading-none"><%= current_page.data.company %></h3>
                     </div>
-                    <span class="bg-orange-200 rounded px-2 inline-block text-orange-400 font-bold">Pro</span>
                 </div>
-                <div class="flex items-center flex-col md:flex-row">
-                    <h2 class="text-gray-800 font-bold text-4xl mr-4 leading-none"><%= current_page.title %> </h2>
-                    <span class="bg-teal-200 rounded-sm px-2 inline-block text-teal-800 text-sm mt-2 mt-0:md"><%= current_page.data.job_type %></span>
+                <div class="flex items-center justify-center flex-col">
+                    <div class="flex items-center flex-col md:flex-row pb-4">
+                        <h2 class="text-gray-800 font-bold text-xl md:text-4xl md:mr-4 leading-none"><%= current_page.title %> </h2>
+                        <span class="bg-teal-200 rounded-sm px-2 inline-block text-teal-800 text-sm mt-2 mt-0:md"><%= current_page.data.job_type %></span>
+                    </div>
+                    <div class="flex items-center flex-col md:flex-row">
+                        <h4 class="font-bold text-gray-500 m-0 text-sm leading-none">@<%= current_page.data.state %> , <%= current_page.data.country %></h4>
+                        <span class="text-gray-500 mx-2 hidden md:inline-block">|</span>
+                        <a class="font-bold text-gray-500 m-0 text-sm leading-none" href="<%= current_page.data.company_url %>" target="_blank"><%= current_page.data.company_url %></a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-<section class="bg-gray-200 py-4">
+<section class="bg-gray-200 py-4 min-h-screen">
     <div class="mx-auto w-10/12 md:w-8/12 max-w-6xl py-4 mb-2">
         <h2 class="text-xl md:text-4xl leading-tight mb-2 font-bold">Encuentra el mejor talento publicando tu vacante en nuestro sitio y llega a nuestra red de creativos.</h2>
         <h3 class="md:text-xl"> <strong class="font-bold">worklo</strong> es un tablero de vacantes para áreas creativas en todo latinoamerica, además de listar las mejores
@@ -6,115 +6,124 @@
     </div>
 
 
-        <form name="job" class="w-full md:w-8/12 mx-auto bg-white p-5 shadow-md rounded" netlify>
-            <h4 class="pb-5 text-black font-bold">&#x1F449;Información de Empresa</h4>
+        <form id="form" name="job" class="w-full md:w-8/12 mx-auto bg-white p-5 shadow-md rounded" netlify>
+            <div class="form-content">
+                <h4 class="pb-5 text-black font-bold">&#x1F449;Información de Empresa</h4>
 
-            <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full md:w-4/12 px-3 mb-6 md:mb-0">    
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Nombre</label>
-                    <input name="nombre" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="text" placeholder="Ej. Empresa ACME">
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-4/12 px-3 mb-6 md:mb-0">    
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Nombre</label>
+                        <input name="nombre" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="text" placeholder="Ej. Empresa ACME" required>
+                    </div>
+                    <div class="w-full md:w-4/12 px-3">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Sitio Web (Opcional)</label>
+                        <input name="website" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="text" placeholder="Ej. www.acme.com">
+                    </div>
+                    <div class="w-full md:w-4/12 px-3">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Logotipo (Opcional)</label>
+                        <input name="logotipo" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="file"">
+                    </div>
                 </div>
-                <div class="w-full md:w-4/12 px-3">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Sitio Web</label>
-                    <input name="website" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="text" placeholder="Ej. Empresa ACME">
-                </div>
-                <div class="w-full md:w-4/12 px-3">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Logotipo</label>
-                    <input name="logotipo" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="file" placeholder="Ej. Empresa ACME">
-                </div>
-            </div>
 
-            <h4 class="pb-5 text-black font-bold">&#x1F449;Información de Vacante</h4>
+                <h4 class="pb-5 text-black font-bold">&#x1F449;Información de Vacante</h4>
 
-            <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full md:w-6/12 px-3 mb-6 md:mb-0">    
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Categorias</label>
-                    <input name="categorias" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="text" placeholder="Ej. diseño,moda,interiores">
-                </div>
-                <div class="w-full md:w-6/12 px-3">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Tipo de Vacante</label>
-                    <div class="relative">
-                        <select name="tipo" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-                            <option>Tiempo Completo</option>
-                            <option>Medio Tiempo</option>
-                            <option>Intership</option>
-                            <option>Freelance</option>
-                        </select>
-                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-6/12 px-3 mb-6 md:mb-0">    
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Categorias</label>
+                        <input name="categorias" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="text" placeholder="Ej. diseño,moda,interiores" required>
+                    </div>
+                    <div class="w-full md:w-6/12 px-3">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Tipo de Vacante</label>
+                        <div class="relative">
+                            <select name="tipo" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" required>
+                                <option>Tiempo Completo</option>
+                                <option>Medio Tiempo</option>
+                                <option>Intership</option>
+                                <option>Freelance</option>
+                            </select>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full px-3 mb-6 md:mb-6">    
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Título de vacante</label>
-                    <input name="titulo" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="text" placeholder="Ej. Sr Designer"></textarea>
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full px-3 mb-6 md:mb-6">    
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Título de vacante</label>
+                        <input name="titulo" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="text" placeholder="Ej. Sr Designer" required>
+                    </div>
+                    <div class="w-full px-3 mb-6 md:mb-0">    
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Descripción</label>
+                        <textarea name="descripcion" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="" id="" cols="30" rows="10" required></textarea>
+                    </div>
                 </div>
-                <div class="w-full px-3 mb-6 md:mb-0">    
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Descripción</label>
-                    <textarea name="descripcion" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="" id="" cols="30" rows="10"></textarea>
-                </div>
-            </div>
 
-            <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full md:w-6/12 px-3 mb-6 md:mb-0">    
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >Estado/Ciudad</label>
-                    <input name="estado" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="text" placeholder="Ej. Ciudad de México">
-                </div>
-                <div class="w-full md:w-6/12 px-3">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">País</label>
-                    <div class="relative">
-                        <select name="pais" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-                                <option>Argentina</option>
-                                <option>Bolivia</option>
-                                <option>Brasil</option>
-                                <option>Chile</option>
-                                <option>Colombia</option>
-                                <option>Costa Rica</option>
-                                <option>Cuba</option>
-                                <option>Ecuador</option>
-                                <option>El Salvador</option>
-                                <option>Guayana Francesa</option>
-                                <option>Granada</option>
-                                <option>Guatemala</option>
-                                <option>Guayana</option>
-                                <option>Haití</option>
-                                <option>Honduras</option>
-                                <option>Jamaica</option>
-                                <option>México</option>
-                                <option>Nicaragua</option>
-                                <option>Paraguay</option>
-                                <option>Panamá</option>
-                                <option>Perú</option>
-                                <option>Puerto Rico</option>
-                                <option>República Dominicana</option>
-                                <option>Uruguay</option>
-                                <option>Venezuela</option>
-                        </select>
-                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-6/12 px-3 mb-6 md:mb-0">    
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Estado/Ciudad</label>
+                        <input name="estado" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="text" placeholder="Ej. Ciudad de México" required>
+                    </div>
+                    <div class="w-full md:w-6/12 px-3">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">País</label>
+                        <div class="relative">
+                            <select name="pais" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" required>
+                                    <option>Culquier parte del mundo</option>
+                                    <option>Argentina</option>
+                                    <option>Bolivia</option>
+                                    <option>Brasil</option>
+                                    <option>Chile</option>
+                                    <option>Colombia</option>
+                                    <option>Costa Rica</option>
+                                    <option>Cuba</option>
+                                    <option>Ecuador</option>
+                                    <option>El Salvador</option>
+                                    <option>Guayana Francesa</option>
+                                    <option>Granada</option>
+                                    <option>Guatemala</option>
+                                    <option>Guayana</option>
+                                    <option>Haití</option>
+                                    <option>Honduras</option>
+                                    <option>Jamaica</option>
+                                    <option>México</option>
+                                    <option>Nicaragua</option>
+                                    <option>Paraguay</option>
+                                    <option>Panamá</option>
+                                    <option>Perú</option>
+                                    <option>Puerto Rico</option>
+                                    <option>República Dominicana</option>
+                                    <option>Uruguay</option>
+                                    <option>Venezuela</option>
+                            </select>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <h4 class="pb-5 text-black font-bold">&#x1F449;Información de Contacto</h4>
+
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-6/12 px-3 mb-6 md:mb-0">    
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Enviar email a: (opcional)</label>
+                        <input name="email" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="text" placeholder="Ej. vacantes@acme.com">
+                    </div>
+                    <div class="w-full md:w-6/12 px-3">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Aplicar en: (opcional)</label>
+                        <input name="url" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="text" placeholder="Ej. www.acme.com/vacante">
+                    </div>
+                </div>
+
+                <input type="submit" value="Publicar Vacante" class="w-full text-xl shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-3 px-4 rounded" >
+                <p class="py-2 text-sm text-gray-600 max-w-xl mx-auto text-center">(Una vez envies tu vacante nuestro equipo revisará que todos los datos esten en orden, este proceso puede tardar hasta 24 horas)</p>
             </div>
 
-            <h4 class="pb-5 text-black font-bold">&#x1F449;Información de Contacto</h4>
-
-            <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full md:w-6/12 px-3 mb-6 md:mb-0">    
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Enviar email a:</label>
-                    <input name="email" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="text" placeholder="Ej. vacantes@acme.com">
-                </div>
-                <div class="w-full md:w-6/12 px-3">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Aplicar en:</label>
-                    <input name="url" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="text" placeholder="Ej. www.acme.com/vacante">
-                </div>
+            <div class="form-message text-center py-5 hidden">
+                <h3 class="text-purple-400 uppercase font-bold leading-tight text-xs">¡Solicitud Exitosa!</h3>
+                <h4 class="text-4xl font-bold">¡Vacante Recibida!</h4>
+                <p class="text-gray-700 text-xl max-w-xl mx-auto">Hemos recibido con exito tu solicitud, nuestro equipo esta revisando que todos los datos esten correctos.</p>
             </div>
-
-            <input type="submit" value="Publicar Vacante" class="w-full text-xl shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-3 px-4 rounded" >
-            <p class="py-2 text-sm text-gray-600 max-w-xl mx-auto text-center">(Una vez envies tu vacante nuestro equipo revisará que todos los datos esten en orden, este proceso puede tardar hasta 24 horas)</p>
         </form>
     </div>
 </section>
