@@ -15,7 +15,7 @@ page '/*.txt', layout: false
 
 activate :blog do |blog|
   blog.prefix = "vacantes"
-  blog.permalink = "vacantes/{company}/{title}.html"
+  blog.permalink = "/{company}/{title}.html"
   blog.layout = "service_layout"
 end
 
