@@ -38,7 +38,7 @@
             </div>
             
             <h3 class="text-xs font-bold mb-2 uppercase">Aplicar</h3>
-            <% if current_page.data.email? %>
+            <% if current_page.data.email? && current_page.data.email != ''  %>
                 <div class="rounded bg-gray-200 p-5 my-2">
                     <h3 class="font-bold text-sm">Aplicar Vacante:</h3>
                     <p class="py-1">Enviar Portafolio a:</p>
@@ -46,7 +46,7 @@
                 </div>
             <% end %>
 
-            <% if current_page.data.apply_url? %>
+            <% if current_page.data.apply_url? && current_page.data.apply_url != '' %>
                 <div class="rounded bg-gray-200 p-5 my-2">
                     <h3 class="font-bold text-sm">Aplicar Vacante:</h3>
                     <p class="py-1">Aplicar y más detalles en:</p>
