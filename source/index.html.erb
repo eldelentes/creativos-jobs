@@ -37,11 +37,11 @@
                                     <h4 class="rounded bg-teal-200 p-1 mr-1 text-xs font-bold text-teal-800 type inline-block"><%= job.data.job_type %></h4>
                                     <div class="category  inline-block">
                                         <% job.data.categories.each do |f| %>
-                                            <span class="rounded bg-gray-200 p-1 text-xs font-bold text-gray-600"><%= f %></span>
+                                            <span class="rounded bg-gray-200 p-1 text-xs font-bold text-gray-600 inline-block"><%= f %></span>
                                         <% end %>
                                     </div>
                                 </div>
-                                <h4 class="text-xs text-gray-700 font-bold my-5 mr-0 md:my-0 md:mr-4">@<%= job.data.state %>, <span class="country"><%= job.data.country %></span></h4>
+                                <h4 class="text-xs text-gray-700 font-bold my-5 mr-0 md:my-0 md:mr-4"><span class="state">@<%= job.data.state %></span> , <span class="country"><%= job.data.country %></span></h4>
                                 <a class="bg-black text-white font-bold md:text-sm py-1 px-2 flex items-center " href="<%= job.url %>">Ver Detalles <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><path d="M9 18l6-6-6-6"/></svg></a>
                             </div>
                         </li>
