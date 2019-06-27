@@ -17,6 +17,13 @@ activate :blog do |blog|
   blog.prefix = "vacantes"
   blog.permalink = "/{company}/{title}.html"
   blog.layout = "service_layout"
+
+  blog.custom_collections = {
+    company: {
+      link: '/{company}.html',
+      template: '/company.html'
+    }
+  }
 end
 
 # With alternative layout
